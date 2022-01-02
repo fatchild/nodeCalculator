@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!--HTML5 DOCTYPE-->
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--viewport for mobile first design-->
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>" />
+
+    <link rel="stylesheet" type="text/css" href="./css/calculator.css" />
+    <script src="./calculator/calculator.js" defer type="module"></script>
+
+    <!-- INCLUDE Bootstrap 4 from a CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <h1 class="display-4">Calculator</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="border p-2">
+                <div class="row m-2 border">
+                    <div id="display-calc" class="m-3 px-0 py-0 bg-white">
+
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div onclick="addToStringCalc('+')"  class="btn btn-light col border m-1 px-4 py-3">+</div>
+                    <div onclick="addToStringCalc('-')" class="btn btn-light col border m-1 px-4 py-3">-</div>
+                    <div onclick="addToStringCalc('*')" class="btn btn-light col border m-1 px-4 py-3">&times;</div>
+                    <div onclick="addToStringCalc('/')" class="btn btn-light col border m-1 px-4 py-3">&divide;</div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-9">
+                        <div class="row">
+                            <div onclick="addToStringCalc('7')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">7</div>
+                            <div onclick="addToStringCalc('8')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">8</div>
+                            <div onclick="addToStringCalc('9')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">9</div>
+                        </div>
+                        <div class="row">
+                            <div onclick="addToStringCalc('4')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">4</div>
+                            <div onclick="addToStringCalc('5')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">5</div>
+                            <div onclick="addToStringCalc('6')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">6</div>
+                        </div>
+                        <div class="row">
+                            <div onclick="addToStringCalc('1')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">1</div>
+                            <div onclick="addToStringCalc('2')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">2</div>
+                            <div onclick="addToStringCalc('3')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">3</div>
+                        </div>
+                        <div class="row">
+                            <div onclick="addToStringCalc('0')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">0</div>
+                            <div onclick="addToStringCalc('.')" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">.</div>
+                            <div onclick="clearCalc()" class="btn btn-light col border m-1 px- py-3 d-flex justify-content-center">C</div>
+                        </div>
+                    </div>
+                    <div onclick="updateAnswer()" class="btn btn-primary col-3 border m-0 px- py- d-flex justify-content-center"><div class="m-1 align-self-center">=</div></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+  </body>
+</html>
+<footer>
+  <p class="pl-4 py-0">v1.0.0 <a href="https://github.com/fatchild"><img class="ml-2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20"></img></a></p>
+</footer>
