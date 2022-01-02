@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/fatchild/nodeCalculator/issues"
   },
-  "homepage": "https://github.com/fatchild/nodeCalculator#readme"
+  "homepage": "https://github.com/fatchild/nodeCalculator#readme",
+  "devDependencies": {
+    "express": "^4.17.2"
+  }
 }
