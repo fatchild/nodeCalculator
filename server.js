@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/app.html'));
 });
 
-app.listen(port, () => console.log('Clock app is listening.'));
+app.listen(port, () => console.log('Calculator is listening.'));
